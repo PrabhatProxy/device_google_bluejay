@@ -52,6 +52,10 @@ PRODUCT_PACKAGES += \
     android.hardware.confirmationui@1.0.vendor:64 \
     libteeui_hal_support.vendor:64
 
+
+# Gcam
+include vendor/gcam/gcam.mk
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
@@ -77,6 +81,9 @@ PRODUCT_PACKAGES += \
     nos_app_keymaster:64 \
     nos_app_weaver:64 \
     pixelpowerstats_provider_aidl_interface-cpp.vendor:64
+
+# PixelParts
+include packages/apps/PixelParts/device.mk
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -134,9 +141,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.6.vendor:64 \
     com.google.hardware.pixel.display-V4-ndk.vendor \
     com.google.hardware.pixel.display-V6-ndk.vendor
-
-# PixelParts
-include packages/apps/PixelParts/device.mk
 
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
