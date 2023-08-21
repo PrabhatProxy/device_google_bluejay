@@ -135,5 +135,8 @@ PRODUCT_PACKAGES += \
     com.google.hardware.pixel.display-V4-ndk.vendor \
     com.google.hardware.pixel.display-V6-ndk.vendor
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
